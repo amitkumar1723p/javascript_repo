@@ -6,16 +6,39 @@
     <title>Document</title>
   </head>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      text-align: center;
+    }
     #imageSlider img {
       display: none;
+      margin: auto;
+    }
+    .task {
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+    button {
+      margin-top: 10px;
+      margin-right: 6px;
+      padding: 5px;
+    }
+    ul li {
+      list-style-type: disc !important;
+      margin: 4px 0px;
+      width: 100px;
+      margin: auto;
     }
   </style>
   <body>
-    <h2>Task One</h2>
+    <h2 class="task">Task One</h2>
     <div id="myDiv">This is some random text.</div>
     <button id="changeColorButton">Change Color</button>
 
-    <h3>Task two</h3>
+    <h2 class="task">Task two</h2>
     <div id="imageSlider">
       <img src="images/image1.jpg" class="img" alt="image1" />
       <img src="images/image2.jpg" class="img" alt="image2" />
@@ -24,7 +47,7 @@
     <button id="next">Next</button>
     <button id="prev">Previous Button</button>
 
-    <h3>Task Three</h3>
+    <h2 class="task">Task Three</h2>
     <ul>
       <li>tea</li>
       <li>coffee</li>
